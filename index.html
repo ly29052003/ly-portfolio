@@ -1,0 +1,1344 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Nhat Ly | Business Analysis & Digital Solutions</title>
+
+  <meta name="description"
+        content="Nhat Ly's portfolio showcasing business analysis case studies, research, process thinking, and digital design projects.">
+
+  <meta name="author" content="Nhat Ly">
+  <meta name="theme-color" content="#27334B">
+
+  <link rel="icon" href="images/LOGO.jpg" type="image/jpeg">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <!-- Icons -->
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- Existing framework and styles -->
+  <link rel="stylesheet" href="css/bootstrap-4.4.1.css">
+  <link rel="stylesheet" href="css/all.css">
+  <link rel="stylesheet" href="css/lightbox.css">
+  <link rel="stylesheet" href="css/animate.css">
+	
+
+<style>
+/* Make the entire typewriter headline bigger */
+#welcome .hero-headline,
+#welcome .typewriter-line,
+#welcome #typewriter-text {
+  font-size: clamp(32px, 3.5vw, 48px) !important;
+  font-weight: 800 !important;
+  line-height: 1.3 !important;
+  letter-spacing: -1px !important;
+}
+
+/* Keep the cursor aligned with the text */
+#welcome .typewriter-cursor {
+  font-size: inherit;
+}
+
+/* Adjust on mobile */
+@media (max-width: 767px) {
+  #welcome .hero-headline,
+  #welcome .typewriter-line,
+  #welcome #typewriter-text {
+    font-size: clamp(27px, 7vw, 36px) !important;
+    letter-spacing: -0.5px !important;
+  }
+}
+</style>
+
+</style>
+
+	
+<style>
+	
+/* ===== CONTACT: remove leftover purple ===== */
+
+#contact,
+#contact.contact-section {
+  background: #EEF2FA !important;
+  background-image: none !important;
+  color: #27334B !important;
+}
+
+#contact .contact-main {
+  background: linear-gradient(
+    135deg,
+    #F8FAFE 0%,
+    #E7EDF9 100%
+  ) !important;
+  background-image: linear-gradient(
+    135deg,
+    #F8FAFE 0%,
+    #E7EDF9 100%
+  ) !important;
+  border: 1px solid rgba(130, 153, 212, 0.22);
+  border-radius: 28px;
+  box-shadow: 0 16px 42px rgba(39, 51, 75, 0.06);
+}
+
+#contact .contact-title,
+#contact .contact-title span {
+  color: #27334B !important;
+  background: none !important;
+  -webkit-text-fill-color: #27334B !important;
+}
+
+#contact .contact-title span {
+  color: #657DBA !important;
+  -webkit-text-fill-color: #657DBA !important;
+}
+
+#contact .contact-description {
+  color: #59657D !important;
+}
+
+#contact .contact-card {
+  background: #FFFFFF !important;
+  background-image: none !important;
+  border: 1px solid rgba(130, 153, 212, 0.25) !important;
+  border-radius: 20px !important;
+}
+
+#contact .contact-item {
+  color: #27334B !important;
+  background: transparent !important;
+  border-radius: 12px;
+}
+
+#contact .contact-item:hover {
+  background: #F4F6FC !important;
+}
+
+#contact .contact-icon {
+  color: #657DBA !important;
+  background: #EEF2FA !important;
+}
+
+#contact .contact-item strong {
+  color: #27334B !important;
+}
+
+#contact .contact-item small {
+  color: #69748A !important;
+}
+
+#contact .contact-arrow {
+  color: #8299D4 !important;
+}
+
+/* ===== EXPERIENCE: separate timeline cards ===== */
+
+#experience .experience-timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+  border-left: none !important;
+  padding-left: 0 !important;
+}
+
+#experience .timeline-item {
+  position: relative;
+  margin: 0 !important;
+  padding: 26px !important;
+  border: 1px solid rgba(130, 153, 212, 0.28) !important;
+  border-radius: 18px !important;
+  background: #FFFFFF !important;
+  color: #27334B !important;
+  box-shadow: 0 10px 28px rgba(39, 51, 75, 0.07) !important;
+}
+
+#experience .timeline-item::before,
+#experience .timeline-item::after {
+  display: none !important;
+}
+
+#experience .timeline-dot {
+  display: none !important;
+}
+
+#experience .timeline-meta {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 8px;
+  margin-bottom: 14px;
+}
+
+#experience .timeline-type,
+#experience .timeline-date {
+  color: #657DBA !important;
+}
+
+#experience .timeline-item h4 {
+  color: #27334B !important;
+  margin-bottom: 8px;
+}
+
+#experience .timeline-company {
+  color: #657DBA !important;
+}
+
+#experience .timeline-description {
+  color: #59657D !important;
+  line-height: 1.75;
+}
+
+#experience .experience-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+#experience .experience-tags span {
+  margin: 0 !important;
+  padding: 6px 10px;
+  border-radius: 999px;
+  background: #EEF2FA !important;
+  color: #4D6298 !important;
+  border: 1px solid rgba(130, 153, 212, 0.25);
+}
+
+/* ===== ACHIEVEMENTS: separate white cards ===== */
+
+#experience .achievement-card {
+  margin: 0 0 20px !important;
+  padding: 25px !important;
+  border: 1px solid rgba(130, 153, 212, 0.25) !important;
+  border-radius: 18px !important;
+  background: #FFFFFF !important;
+  color: #27334B !important;
+  box-shadow: 0 10px 28px rgba(39, 51, 75, 0.06) !important;
+}
+
+#experience .achievement-card:last-child {
+  margin-bottom: 0 !important;
+}
+
+#experience .achievement-year {
+  display: inline-block;
+  padding: 5px 10px;
+  margin-bottom: 14px;
+  border-radius: 999px;
+  background: #EEF2FA !important;
+  color: #4D6298 !important;
+  font-size: 11px;
+}
+
+#experience .achievement-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  margin-bottom: 15px;
+  border-radius: 14px;
+  background: #EEF2FA !important;
+  color: #657DBA !important;
+}
+
+#experience .achievement-card h4 {
+  color: #27334B !important;
+  font-size: 17px;
+}
+
+#experience .achievement-card p {
+  color: #59657D !important;
+  line-height: 1.7;
+}
+
+/* Column headings */
+
+#experience .experience-column-heading h3 {
+  color: #27334B !important;
+}
+
+#experience .experience-heading-icon {
+  background: #E2E9F8 !important;
+  color: #657DBA !important;
+}
+
+@media (max-width: 767px) {
+  #experience .timeline-item,
+  #experience .achievement-card {
+    padding: 21px !important;
+  }
+}
+</style>
+
+  <!-- Keep the portfolio theme last so it overrides Bootstrap defaults -->
+  <link rel="stylesheet" href="css/portfolio-theme.css">
+
+  <!-- Google Material Symbols: keep only if used elsewhere on the page -->
+  <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+
+
+  <style>
+    :root {
+      --soft-cobalt: #8299D4;
+      --soft-cobalt-dark: #657DBA;
+      --soft-cobalt-deep: #3F5287;
+      --soft-cobalt-bg: #EEF2FA;
+      --soft-cobalt-text: #27334B;
+      --soft-cobalt-accent: #D8B7A1;
+    }
+
+    html { scroll-behavior: smooth; }
+    body.portfolio-page {
+      color: var(--soft-cobalt-text);
+      background: var(--soft-cobalt-bg);
+    }
+
+    /* HOME: deliberately dark so white hero text stays readable */
+    #welcome.hero-section {
+      position: relative;
+      overflow: hidden;
+      color: #fff;
+      background: linear-gradient(120deg, #27334B 0%, #3F5287 48%, #657DBA 100%) !important;
+    }
+    #welcome.hero-section::before {
+      content: "";
+      position: absolute;
+      width: 420px;
+      height: 420px;
+      right: -130px;
+      top: -150px;
+      border-radius: 50%;
+      background: rgba(238, 242, 250, .08);
+      pointer-events: none;
+    }
+    #welcome.hero-section .container { position: relative; z-index: 1; }
+    #welcome.hero-section .hero-eyebrow,
+    #welcome.hero-section .hero-name,
+    #welcome.hero-section .hero-headline,
+    #welcome.hero-section .typewriter-line,
+    #welcome.hero-section .hero-intro,
+    #welcome.hero-section .hero-interests,
+    #welcome.hero-section .hero-social-label,
+    #welcome.hero-section .hero-bottom,
+    #welcome.hero-section .hero-bottom span {
+      color: #fff !important;
+    }
+    #welcome.hero-section .name-dot,
+    #welcome.hero-section .brand-dot { color: var(--soft-cobalt-accent) !important; }
+    #welcome.hero-section .typewriter-cursor {
+      background: var(--soft-cobalt-accent) !important;
+      border-color: var(--soft-cobalt-accent) !important;
+    }
+    #welcome.hero-section .hero-btn-primary {
+      color: #27334B !important;
+      background: #EEF2FA !important;
+      border: 1px solid #EEF2FA !important;
+    }
+    #welcome.hero-section .hero-btn-primary:hover {
+      color: #fff !important;
+      background: #657DBA !important;
+      border-color: #657DBA !important;
+    }
+    #welcome.hero-section .hero-btn-outline {
+      color: #fff !important;
+      border: 1px solid rgba(255,255,255,.75) !important;
+      background: transparent !important;
+    }
+    #welcome.hero-section .hero-btn-outline:hover {
+      color: #27334B !important;
+      background: #fff !important;
+    }
+    #welcome.hero-section .hero-socials a {
+      color: #fff !important;
+      border-color: rgba(255,255,255,.45) !important;
+    }
+    #welcome.hero-section .hero-socials a:hover {
+      color: #27334B !important;
+      background: #fff !important;
+    }
+    #welcome.hero-section .bottom-line {
+      background: rgba(255,255,255,.5) !important;
+    }
+    #welcome.hero-section .scroll-hint { color: #fff !important; }
+
+    /* NAVIGATION */
+    .portfolio-navbar {
+      background: rgba(238, 242, 250, .96) !important;
+      backdrop-filter: blur(12px);
+    }
+    .portfolio-navbar .navbar-brand,
+    .portfolio-navbar .navbar-brand.text-light {
+      color: #27334B !important;
+    }
+    .portfolio-navbar .brand-dot { color: #8299D4 !important; }
+    .portfolio-navbar .navbar-nav .nav-link {
+      color: #27334B !important;
+    }
+    .portfolio-navbar .navbar-nav .nav-link:hover,
+    .portfolio-navbar .navbar-nav .nav-link:focus,
+    .portfolio-navbar .navbar-nav .active > .nav-link {
+      color: #657DBA !important;
+    }
+    .portfolio-contact-btn {
+      color: #fff !important;
+      background: #657DBA !important;
+      border: 1px solid #657DBA !important;
+    }
+    .portfolio-contact-btn:hover {
+      color: #fff !important;
+      background: #3F5287 !important;
+      border-color: #3F5287 !important;
+    }
+
+    /* CONTENT SECTIONS: light backgrounds with dark readable text */
+    #about, #project, #experience, #contact,
+    .about-section, .projects-section, .experience-section, .contact-section {
+      color: #27334B;
+      background: #EEF2FA !important;
+    }
+    #about h2, #about h3, #about h4,
+    #project h2, #project h3, #project h4,
+    #experience h2, #experience h3, #experience h4,
+    #contact h2, #contact h3, #contact h4,
+    #about p, #project p, #experience p, #contact p {
+      color: #27334B;
+    }
+    #about h2 span, #project h2 span,
+    #experience h2 span, #contact h2 span {
+      color: #657DBA;
+    }
+    .about-eyebrow, .projects-eyebrow, .experience-eyebrow,
+    .contact-eyebrow, .about-label, .project-category {
+      color: #657DBA !important;
+    }
+
+    .approach-card, .project-card, .featured-project,
+    .achievement-card, .contact-card {
+      background: #fff !important;
+      color: #27334B !important;
+      border: 1px solid rgba(130,153,212,.25);
+      box-shadow: 0 12px 35px rgba(39,51,75,.07);
+    }
+    .approach-card h4, .project-card h3, .featured-project h3,
+    .achievement-card h4, .contact-card strong {
+      color: #27334B !important;
+    }
+    .approach-card p, .project-card p, .featured-project p,
+    .achievement-card p, .contact-card small {
+      color: #59657D !important;
+    }
+    .approach-icon, .achievement-icon, .contact-icon,
+    .experience-heading-icon {
+      color: #657DBA !important;
+      background: #EEF2FA !important;
+    }
+    .approach-number, .achievement-year,
+    .timeline-type, .timeline-date {
+      color: #657DBA !important;
+    }
+    .project-tags span, .experience-tags span {
+      color: #4D6298 !important;
+      background: #EEF2FA !important;
+      border: 1px solid rgba(130,153,212,.25);
+    }
+    .project-link, .about-link, .projects-view-all, .contact-email {
+      color: #4D6298 !important;
+    }
+    .project-link:hover, .about-link:hover,
+    .projects-view-all:hover, .contact-email:hover {
+      color: #27334B !important;
+    }
+
+    .experience-timeline { border-left-color: #8299D4 !important; }
+    .timeline-item {
+      background: #fff !important;
+      color: #27334B !important;
+      border: 1px solid rgba(130,153,212,.25);
+      box-shadow: 0 8px 24px rgba(39,51,75,.06);
+    }
+    .timeline-item h4, .timeline-item .timeline-company,
+    .timeline-item .timeline-description { color: #27334B !important; }
+    .timeline-dot { background: #8299D4 !important; border-color: #EEF2FA !important; }
+
+    .contact-item { color: #27334B !important; }
+    .contact-item:hover { background: #EEF2FA !important; }
+    .portfolio-footer, .portfolio-footer p, .portfolio-footer a {
+      color: #27334B !important;
+    }
+    .portfolio-copyright {
+      color: #EEF2FA !important;
+      background: #27334B !important;
+    }
+    .portfolio-copyright p { color: #EEF2FA !important; }
+
+    img { max-width: 100%; }
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      *, *::before, *::after {
+        animation-duration: .01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: .01ms !important;
+      }
+    }
+  </style>
+
+</head>
+	
+
+<body class="portfolio-page">
+
+<nav class="navbar navbar-expand-lg navbar-light fixed-top shadow-sm portfolio-navbar">
+  <div class="container">
+
+    <a class="navbar-brand text-light portfolio-brand" href="#welcome">
+      Nhat Ly<span class="brand-dot">.</span>
+    </a>
+
+    <button
+      class="navbar-toggler border-0"
+      type="button"
+      data-toggle="collapse"
+      data-target="#portfolioNavbar"
+      aria-controls="portfolioNavbar"
+      aria-expanded="false"
+      aria-label="Toggle navigation">
+
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="portfolioNavbar">
+
+      <ul class="navbar-nav ml-auto align-items-lg-center">
+
+        <li class="nav-item">
+          <a class="nav-link" href="#welcome">Home</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="#about">About</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="#project">Projects</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="#experience">Experience</a>
+        </li>
+
+        <li class="nav-item ml-lg-2">
+          <a class="btn portfolio-contact-btn" href="#contact">
+            Contact
+            <i class="fa fa-arrow-right ml-1" aria-hidden="true"></i>
+          </a>
+        </li>
+
+      </ul>
+
+    </div>
+  </div>
+</nav>
+	
+	 <!-- Left: Introduction Home -->
+<section id="welcome" class="hero-section">
+  <div class="container scroll-reveal">
+    <div class="row align-items-center ">
+
+      <!-- Left: Introduction -->
+      <div class="col-lg-7 col-md-7 hero-content">
+        <p class="hero-eyebrow reveal reveal-1">
+          HELLO, I'M
+        </p>
+
+        <h1 class="hero-name reveal reveal-2">
+          Nhat Ly<span class="name-dot"></span>
+        </h1>
+
+        
+
+<div class="hero-headline reveal reveal-3">
+  <div class="typewriter-line" aria-label="Understanding Problems. Connecting Ideas. Building Solutions.">
+    <span id="typewriter-text" aria-hidden="true"></span><span class="typewriter-cursor" aria-hidden="true"></span>
+  </div>
+</div>
+
+
+
+        <p class="hero-intro reveal reveal-4">
+          With a background in Law and Business Administration,
+          I enjoy understanding business needs, exploring processes,
+          and connecting ideas to practical solutions.
+        </p>
+
+        <p class="hero-interests reveal reveal-4">
+          Business Analysis
+          <span>·</span>
+          Business Operations
+          <span>·</span>
+          Digital Solutions
+        </p>
+
+        <div class="hero-buttons reveal reveal-5">
+          <a href="#project" class="btn hero-btn-primary">
+            View My Projects
+            <i class="fa fa-arrow-right ml-2" aria-hidden="true"></i>
+          </a>
+
+          <a
+            href="BUSINESS_ANALYST_FRESHER.pdf"
+            class="btn hero-btn-outline"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Download CV
+          </a>
+        </div>
+
+        <div class="hero-socials reveal reveal-5">
+          <span class="hero-social-label">LET'S CONNECT</span>
+
+          <a
+            href="https://www.linkedin.com/in/nh%E1%BA%ADt-ly-ph%E1%BA%A1m-tr%E1%BA%A7n-570187438/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="LinkedIn"
+          >
+            <i class="fa fa-linkedin" aria-hidden="true"></i>
+          </a>
+
+          <a
+            href="mailto:nhatlytr@gmail.com"
+            aria-label="Email"
+          >
+            <i class="fa fa-envelope" aria-hidden="true"></i>
+          </a>
+
+          <a
+            href="https://www.behance.net/nhatlytran"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Behance"
+          >
+            <i class="fa fa-behance" aria-hidden="true"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- Right: Portrait -->
+      <div class="col-lg-5 col-md-5 hero-image-column">
+        <div class="hero-image-frame">
+          <div class="hero-image-decoration"></div>
+
+          <img
+            src="images/22.jpg"
+            alt="Portrait of Nhat Ly"
+            class="hero-image"
+          />
+
+          <div class="hero-image-caption">
+            <span class="caption-dot"></span>
+            <span>Curious by nature. Always learning.</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Bottom note -->
+    <div class="hero-bottom reveal reveal-5">
+      <span>RESEARCH</span>
+      <span class="bottom-line"></span>
+      <span>ANALYSIS</span>
+      <span class="bottom-line"></span>
+      <span>COORDINATION</span>
+
+      <a href="#project" class="scroll-hint" aria-label="Scroll to projects">
+        <i class="fa fa-angle-down" aria-hidden="true"></i>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!--ABOUT ME-->	
+	
+<!-- ABOUT SECTION -->
+<section id="about" class="about-section">
+  <div class="container scroll-reveal">
+
+    <!-- Section heading -->
+    <div class="about-heading">
+      <p class="about-eyebrow">A LITTLE ABOUT ME</p>
+      <h2>Different perspectives.<br>
+        <span>One practical mindset.</span>
+      </h2>
+      <p class="about-subtitle">
+        My background brings together business, law,
+        research, and digital design.
+      </p>
+    </div>
+
+    <!-- Main content -->
+    <div class="row align-items-center about-main">
+
+      <!-- Portrait -->
+      <div class="col-lg-5 col-md-5">
+        <div class="about-image-wrap">
+          <img
+            src="images/222.jpg"
+            alt="Nhat Ly"
+            class="about-image"
+          >
+          <div class="about-image-note">
+            <span>LEARNING</span>
+            <span>·</span>
+            <span>EXPLORING</span>
+            <span>·</span>
+            <span>GROWING</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Introduction -->
+      <div class="col-lg-7 col-md-7">
+        <div class="about-copy">
+          <p class="about-label">MY STORY</p>
+
+          <h3>Curious about how things work.</h3>
+
+          <p>
+            Hi, I'm Nhat Ly. I have a background in Law
+            and Business Administration, along with training
+            in digital design.
+          </p>
+
+          <p>
+            Through research, student activities, and my
+            experience in B2B software sales, I have learned
+            to look at problems from different perspectives,
+            communicate with people, and understand their needs.
+          </p>
+
+          <p>
+            I am now developing my skills in business analysis
+            and process improvement. I want to better understand
+            how businesses work and how practical solutions
+            can improve the way people work.
+          </p>
+
+          <a href="#project" class="about-link">
+            Explore my projects
+            <i class="fa fa-arrow-right ml-2"
+               aria-hidden="true"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- How I work -->
+    <div class="about-approach">
+      <div class="approach-heading">
+        <p class="about-eyebrow">HOW I APPROACH MY WORK</p>
+        <h3>Three things I value.</h3>
+      </div>
+
+      <div class="row">
+
+        <div class="col-md-4 mb-4">
+          <div class="approach-card">
+            <span class="approach-number">01</span>
+            <div class="approach-icon">
+              <i class="fa fa-search" aria-hidden="true"></i>
+            </div>
+            <h4>Research & Analysis</h4>
+            <p>
+              I enjoy gathering information, comparing
+              perspectives, and finding the key points
+              behind a problem.
+            </p>
+          </div>
+        </div>
+
+        <div class="col-md-4 mb-4">
+          <div class="approach-card">
+            <span class="approach-number">02</span>
+            <div class="approach-icon">
+              <i class="fa fa-sitemap" aria-hidden="true"></i>
+            </div>
+            <h4>Process Thinking</h4>
+            <p>
+              I am learning to understand workflows,
+              identify gaps, and explore ways to make
+              processes clearer and more effective.
+            </p>
+          </div>
+        </div>
+
+        <div class="col-md-4 mb-4">
+          <div class="approach-card">
+            <span class="approach-number">03</span>
+            <div class="approach-icon">
+              <i class="fa fa-comments-o" aria-hidden="true"></i>
+            </div>
+            <h4>Communication & Teamwork</h4>
+            <p>
+              I value clear communication, sharing ideas,
+              and working with different people toward
+              a common goal.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- SELECTED PROJECTS -->
+<section id="project" class="projects-section">
+  <div class="container scroll-reveal">
+
+    <!-- Heading -->
+    <div class="projects-heading scroll-reveal">
+      <div>
+        <p class="projects-eyebrow">SELECTED WORK</p>
+        <h2>Projects & <span>Research.</span></h2>
+        <p class="projects-intro">
+          A selection of projects that reflect my approach
+          to research, problem-solving, and creative thinking.
+        </p>
+      </div>
+
+      <a href="project.html" class="projects-view-all">
+        View all projects
+        <i class="fa fa-arrow-right ml-2" aria-hidden="true"></i>
+      </a>
+    </div>
+
+    <!-- Featured project -->
+    <article class="featured-project scroll-reveal">
+      <div class="featured-project-image">
+        <!-- Replace with your actual case study cover -->
+        <img
+          src="images/12.png"
+          alt="Quotation to Shipment business analysis case study"
+          loading="lazy"
+        >
+        <span class="project-image-label">01 / CASE STUDY</span>
+      </div>
+
+      <div class="featured-project-content">
+        <p class="project-category">BUSINESS ANALYSIS</p>
+        <h3>From Quotation to Shipment</h3>
+
+        <p>
+          An independent case study exploring the freight forwarding
+  workflow from quotation acceptance to shipment processing.
+  The analysis focuses on understanding process steps,
+  identifying potential information gaps, and translating
+  business needs into structured requirements.
+        </p>
+
+        <div class="project-tags">
+         <span>Process Analysis</span>
+  <span>Business Requirements</span>
+  <span>Workflow Mapping</span>
+        </div>
+
+        <a
+          href="https://drive.google.com/file/d/1EobNfbQjI2rQ6nIr0X0gkJlNx1dWwp_a/view?usp=sharing"
+          class="project-link"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Explore case study
+          <i class="fa fa-arrow-right ml-2" aria-hidden="true"></i>
+        </a>
+      </div>
+    </article>
+
+    <!-- Other projects -->
+    <div class="row project-grid scroll-reveal">
+
+      <!-- Project 2 -->
+      <div class="col-lg-4 col-md-6 mb-4">
+        <article class="project-card">
+          <a
+            href="https://docs.google.com/document/d/1iyIJ4IqlXb8jAEIqSiIYif-dioacmNHC/edit?usp=sharing&ouid=107075716429151674790&rtpof=true&sd=true"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="project-card-image"
+            aria-label="View graduation thesis"
+          >
+            <img
+              src="images/24.jpg"
+              alt="Graduation thesis on parliamentary oversight"
+              loading="lazy"
+            >
+            <span class="project-open">
+              <i class="fa fa-arrow-up" aria-hidden="true"></i>
+            </span>
+          </a>
+
+          <div class="project-card-content">
+            <p class="project-category">LEGAL RESEARCH</p>
+            <h3>Graduation Thesis</h3>
+            <p>
+              Research on the role of the Parliamentary
+              Ombudsman in supporting parliamentary oversight
+              in Vietnam, with reference to the UK model.
+            </p>
+            <a
+              href="https://docs.google.com/document/d/1iyIJ4IqlXb8jAEIqSiIYif-dioacmNHC/edit?usp=sharing&ouid=107075716429151674790&rtpof=true&sd=true"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="project-link"
+            >
+              View research
+              <i class="fa fa-arrow-right ml-2" aria-hidden="true"></i>
+            </a>
+          </div>
+        </article>
+      </div>
+
+      <!-- Project 3 -->
+      <div class="col-lg-4 col-md-6 mb-4">
+        <article class="project-card">
+          <a
+            href="https://drive.google.com/file/d/13tMwUT3hptZ2IcXGF-HH2-yAvb-TCdq5/view?usp=sharing"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="project-card-image"
+            aria-label="View CON UX research project"
+          >
+            <img
+              src="images/38.jpg"
+              alt="CON user experience research project"
+              loading="lazy"
+            >
+            <span class="project-open">
+              <i class="fa fa-arrow-up" aria-hidden="true"></i>
+            </span>
+          </a>
+
+          <div class="project-card-content">
+            <p class="project-category">UX RESEARCH</p>
+            <h3>CON Research</h3>
+            <p>
+              A team research project exploring older adults'
+              mobile phone experiences through user research
+              and experience mapping.
+            </p>
+            <a
+              href="https://drive.google.com/file/d/13tMwUT3hptZ2IcXGF-HH2-yAvb-TCdq5/view?usp=sharing"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="project-link"
+            >
+              View project
+              <i class="fa fa-arrow-right ml-2" aria-hidden="true"></i>
+            </a>
+          </div>
+        </article>
+      </div>
+
+      <!-- Project 4 -->
+      <div class="col-lg-4 col-md-6 mb-4">
+        <article class="project-card">
+          <a
+            href="https://drive.google.com/file/d/17qF-1cl9L31e9v8DHNtcRHCOagT38WyB/view?usp=sharing"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="project-card-image"
+            aria-label="View HY BAR brand identity project"
+          >
+            <img
+              src="images/25102024---SEM1---HyBar1.jpg"
+              alt="HY BAR brand identity design"
+              loading="lazy"
+            >
+            <span class="project-open">
+              <i class="fa fa-arrow-up" aria-hidden="true"></i>
+            </span>
+          </a>
+
+          <div class="project-card-content">
+            <p class="project-category">BRAND IDENTITY</p>
+            <h3>HY BAR</h3>
+            <p>
+              A digital design project exploring brand identity,
+              visual consistency, and creative presentation.
+            </p>
+            <a
+              href="https://drive.google.com/file/d/17qF-1cl9L31e9v8DHNtcRHCOagT38WyB/view?usp=sharing"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="project-link"
+            >
+              View design
+              <i class="fa fa-arrow-right ml-2" aria-hidden="true"></i>
+            </a>
+          </div>
+        </article>
+      </div>
+
+    </div>
+
+    <!-- Closing note -->
+    <div class="projects-footer">
+      <p>
+        Every project is an opportunity to ask better questions,
+        learn something new, and improve the way I approach problems.
+      </p>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- EXPERIENCE & ACHIEVEMENTS -->
+<section id="experience" class="experience-section">
+  <div class="container scroll-reveal">
+
+    <div class="experience-heading">
+      <p class="experience-eyebrow">MY JOURNEY</p>
+      <h2>Experience & <span>Achievements.</span></h2>
+      <p>
+        Experiences that have shaped how I communicate,
+        organize information, and approach new challenges.
+      </p>
+    </div>
+
+    <div class="row">
+
+      <!-- Experience timeline -->
+      <div class="col-lg-7">
+        <div class="experience-column-heading">
+          <span class="experience-heading-icon">
+            <i class="fa fa-briefcase" aria-hidden="true"></i>
+          </span>
+          <h3>Experience</h3>
+        </div>
+
+        <div class="experience-timeline">
+
+          <!-- Apollogix -->
+          <article class="timeline-item">
+            <span class="timeline-dot"></span>
+
+            <div class="timeline-meta">
+              <span class="timeline-type">PROFESSIONAL EXPERIENCE</span>
+              <span class="timeline-date">2026</span>
+            </div>
+
+            <h4>Technical Sales</h4>
+            <p class="timeline-company">
+              Apollogix · B2B Software
+            </p>
+
+           
+<p class="timeline-description">
+  Researched prospective B2B customers and learned about
+  software product capabilities to support sales activities.
+  Prepared customer outreach materials and developed an
+  understanding of freight forwarding workflows and
+  potential business needs.
+</p>
+
+<div class="experience-tags">
+  <span>B2B Software</span>
+  <span>Product Research</span>
+  <span>Customer Needs</span>
+  <span>Business Processes</span>
+</div>
+
+          </article>
+
+<article class="timeline-item">
+  <div class="timeline-meta">
+    <span class="timeline-type">LEGAL INTERNSHIP</span>
+    <span class="timeline-date">Sep 2024 – Feb 2025</span>
+  </div>
+
+  <h4>Legal Intern – Labor Court</h4>
+  <p class="timeline-company">
+    Ho Chi Minh City People's Court
+  </p>
+
+  <p class="timeline-description">
+    Reviewed, classified, and organized case files and
+    supporting documents to maintain accurate records and
+    facilitate retrieval. Prepared administrative documents,
+    checked and updated case-related information, and
+    coordinated with supervising staff in document preparation.
+  </p>
+
+  <div class="experience-tags">
+    <span>Document Management</span>
+    <span>Information Accuracy</span>
+    <span>Coordination</span>
+  </div>
+</article>
+
+          <!-- Student leadership -->
+          <article class="timeline-item">
+            <span class="timeline-dot"></span>
+
+            <div class="timeline-meta">
+              <span class="timeline-type">LEADERSHIP & COORDINATION</span>
+              <span class="timeline-date">2021 – 2026</span>
+            </div>
+
+            <h4>Class Representative & Student Association Leader</h4>
+            <p class="timeline-company">
+              University of Law · Class QTL46A2
+            </p>
+
+           
+<p class="timeline-description">
+  Managed and updated information for 49 student association
+  members, coordinated class communications, and supported
+  academic and administrative activities. Prepared plans,
+  tracked participation, consolidated information, and
+  coordinated with students and relevant university staff.
+</p>
+
+<div class="experience-tags">
+  <span>Information Management</span>
+  <span>Coordination</span>
+  <span>Planning & Reporting</span>
+</div>
+
+          </article>
+
+          <!-- Academic research -->
+          <article class="timeline-item">
+            <span class="timeline-dot"></span>
+
+            <div class="timeline-meta">
+              <span class="timeline-type">ACADEMIC RESEARCH</span>
+              <span class="timeline-date">Graduation Project</span>
+            </div>
+
+            <h4>Legal Research & Analysis</h4>
+            <p class="timeline-company">
+              Graduation Thesis
+            </p>
+
+            <p class="timeline-description">
+              Reviewed and compared legal sources,
+              organized research findings, and developed
+              a structured analysis of the research topic.
+            </p>
+
+            <div class="experience-tags">
+              <span>Research</span>
+              <span>Critical Thinking</span>
+              <span>Documentation</span>
+            </div>
+          </article>
+
+        </div>
+      </div>
+
+      <!-- Achievements -->
+      <div class="col-lg-5">
+        <div class="experience-column-heading achievement-title">
+          <span class="experience-heading-icon">
+            <i class="fa fa-trophy" aria-hidden="true"></i>
+          </span>
+          <h3>Selected Achievements</h3>
+        </div>
+
+        <div class="achievement-card">
+          <span class="achievement-year">2024</span>
+       <!--   <div class="achievement-icon">
+            <i class="fa fa-star" aria-hidden="true"></i>
+          </div>-->
+          <h4>First Prize · Legal Explorers</h4>
+          <p>
+            Recognized for achievement in the Legal Explorers
+            competition.
+          </p>
+        </div>
+
+        <div class="achievement-card">
+          <span class="achievement-year">ACADEMIC</span>
+          <!--<div class="achievement-icon">
+            <i class="fa fa-graduation-cap" aria-hidden="true"></i>
+          </div>-->
+          <h4>Graduation Thesis · 9.5/10</h4>
+          <p>
+            Achieved a score of 9.5/10 in the graduation
+            thesis defense.
+          </p>
+        </div>
+
+        <div class="achievement-card">
+          <span class="achievement-year">UNIVERSITY</span>
+        <!--  <div class="achievement-icon">
+            <i class="fa fa-users" aria-hidden="true"></i>
+          </div>-->
+          <h4>Student Leadership</h4>
+          <p>
+            Contributed to class coordination and student
+            activities throughout university.
+          </p>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!--TIMELINE-->
+<!--
+
+-->
+	
+<!--CERTIFICATE-->
+<!--
+<section id="certification" >
+    <div class="py-5 " >
+    <div class="container wow fadeInUp">
+      <div class="row">
+        <div class="text-center mx-auto col-md-12">
+		<h1 class="m-4 ">Certifications</h1>
+		
+			<div class="hvr-underline-from-center">
+				<img class="img-fluid d-block" src="images/MULTIMEDIA.jpg" width="500" height="600">
+				<h6 class="mt-3 mb-1"> ARENA Outstanding Student Award </h6>
+				<p><b>Grade: </b>Exellence</p>
+			
+			</div>
+		</div>      </div>
+    </div>
+  </div>
+</section>
+	
+-->
+
+
+<section id="contact" class="contact-section">
+  <div class="container scroll-reveal">
+    <div class="contact-main">
+      <div class="row align-items-center">
+
+        <div class="col-lg-7 col-md-7">
+          <p class="contact-eyebrow">LET'S CONNECT</p>
+
+          <h2 class="contact-title">
+            Have an opportunity<br>
+            <span>in mind?</span>
+          </h2>
+
+          <p class="contact-description">
+            I'm open to opportunities where I can learn, contribute,
+            and grow in business analysis, business operations,
+            and digital solutions.
+          </p>
+
+          <a href="mailto:lycity79@gmail.com"
+             class="contact-email">
+            nhatlytr@gmail.com
+            <i class="fa fa-arrow-up-right ml-2" aria-hidden="true"></i>
+          </a>
+        </div>
+
+        <div class="col-lg-5 col-md-5">
+          <div class="contact-card">
+            <p class="contact-card-label">GET IN TOUCH</p>
+
+            <a href="mailto:nhatlytr@gmail.com" class="contact-item">
+              <span class="contact-icon">
+                <i class="fa fa-envelope-o" aria-hidden="true"></i>
+              </span>
+              <span>
+                <strong>Email</strong>
+                <small>nhatlytr@gmail.com</small>
+              </span>
+              <i class="fa fa-arrow-right contact-arrow"
+                 aria-hidden="true"></i>
+            </a>
+
+            <a href="https://www.linkedin.com/in/nh%E1%BA%ADt-ly-ph%E1%BA%A1m-tr%E1%BA%A7n-570187438/"
+               target="_blank"
+               rel="noopener noreferrer"
+               class="contact-item">
+              <span class="contact-icon">
+                <i class="fa fa-linkedin" aria-hidden="true"></i>
+              </span>
+              <span>
+                <strong>LinkedIn</strong>
+                <small>Connect professionally</small>
+              </span>
+              <i class="fa fa-arrow-right contact-arrow"
+                 aria-hidden="true"></i>
+            </a>
+
+          <!--  <a href="https://www.behance.net/nhatlytran"
+               target="_blank"
+               rel="noopener noreferrer"
+               class="contact-item">
+              <span class="contact-icon">
+                <i class="fa fa-behance" aria-hidden="true"></i>-->
+              </span>
+              <span>
+              <!--  <strong>Behance</strong>
+                <small>Explore my design work</small>
+              </span>
+              <i class="fa fa-arrow-right contact-arrow"
+                 aria-hidden="true"></i>-->
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <footer class="portfolio-footer">
+      <a href="#welcome" class="footer-brand">Nhat Ly<span>.</span></a>
+      <p>Business · Research · Digital Solutions</p>
+      <a href="#welcome" class="back-to-top" aria-label="Back to top">
+        <i class="fa fa-angle-up" aria-hidden="true"></i>
+      </a>
+    </footer>
+
+  </div>
+</section>
+
+	<!--CONTACT-->
+
+	
+<footer class="py-3 portfolio-copyright">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 text-center">
+        <p class="mt-2 mb-0">© 2026 PHAM TRAN NHAT LY. All rights reserved</p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+	
+<script src="js/jquery-3.6.0.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap-4.4.1.js"></script>
+<script src="js/wow.min.js"></script>
+<script src="js/lightbox.js"></script>
+
+<script>
+  if (typeof WOW !== "undefined") {
+    new WOW().init();
+  }
+</script>
+</body>
+</html>
