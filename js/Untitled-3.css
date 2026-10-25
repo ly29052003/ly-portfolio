@@ -1,0 +1,309 @@
+@charset "utf-8";
+
+/* ========================================
+   SOFT COBALT PORTFOLIO THEME
+   ======================================== */
+
+:root {
+  --color-primary: #8299D4;
+  --color-background: #EEF2FA;
+  --color-text: #27334B;
+  --color-accent: #D8B7A1;
+  --color-white: #FFFFFF;
+  --color-muted: #667187;
+  --color-primary-dark: #657DBA;
+  --color-border: #D9E0EF;
+}
+
+/* Base */
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 85px;
+}
+
+body.portfolio-page {
+  background: var(--color-background);
+  color: var(--color-text);
+}
+
+.portfolio-page h1,
+.portfolio-page h2,
+.portfolio-page h3,
+.portfolio-page h4 {
+  color: var(--color-text);
+}
+
+.portfolio-page p {
+  color: var(--color-muted);
+}
+
+.portfolio-page a {
+  transition: color 0.25s ease,
+              background-color 0.25s ease,
+              border-color 0.25s ease;
+}
+
+/* Navbar */
+.portfolio-navbar {
+  background-color: rgba(238, 242, 250, 0.96) !important;
+  border-bottom: 1px solid var(--color-border);
+  backdrop-filter: blur(12px);
+}
+
+.portfolio-navbar .portfolio-brand {
+  color: var(--color-text) !important;
+  font-weight: 700;
+}
+
+.brand-dot,
+.footer-brand span,
+.name-dot {
+  color: var(--color-primary);
+}
+
+.portfolio-navbar .nav-link {
+  color: var(--color-text) !important;
+  font-weight: 500;
+}
+
+.portfolio-navbar .nav-link:hover,
+.portfolio-navbar .nav-link:focus {
+  color: var(--color-primary-dark) !important;
+}
+
+.portfolio-contact-btn {
+  background: var(--color-primary) !important;
+  border: 1px solid var(--color-primary) !important;
+  color: var(--color-white) !important;
+  border-radius: 8px;
+}
+
+.portfolio-contact-btn:hover {
+  background: var(--color-primary-dark) !important;
+  border-color: var(--color-primary-dark) !important;
+}
+
+/* Section backgrounds */
+.hero-section,
+.about-section,
+.projects-section,
+.experience-section,
+.contact-section {
+  background-color: var(--color-background);
+  color: var(--color-text);
+}
+
+/* Hero */
+.hero-eyebrow,
+.about-eyebrow,
+.projects-eyebrow,
+.experience-eyebrow,
+.contact-eyebrow {
+  color: var(--color-primary-dark);
+  letter-spacing: 2px;
+  font-weight: 700;
+}
+
+.hero-name {
+  color: var(--color-text);
+}
+
+.hero-headline .typewriter-line {
+  color: var(--color-text);
+}
+
+.typewriter-cursor {
+  background-color: var(--color-primary-dark);
+}
+
+.hero-intro,
+.hero-description,
+.about-subtitle,
+.projects-intro,
+.experience-heading > p,
+.contact-description {
+  color: var(--color-muted);
+}
+
+.hero-interests,
+.hero-social-label,
+.hero-bottom {
+  color: var(--color-text);
+}
+
+/* Buttons */
+.hero-btn-primary {
+  background: var(--color-primary);
+  border: 1px solid var(--color-primary);
+  color: var(--color-white);
+  border-radius: 8px;
+}
+
+.hero-btn-primary:hover {
+  background: var(--color-primary-dark);
+  border-color: var(--color-primary-dark);
+  color: var(--color-white);
+}
+
+.hero-btn-outline {
+  color: var(--color-text);
+  border: 1px solid var(--color-primary);
+  border-radius: 8px;
+}
+
+.hero-btn-outline:hover {
+  background: var(--color-primary);
+  color: var(--color-white);
+}
+
+.hero-socials a,
+.about-link,
+.projects-view-all,
+.project-link,
+.contact-email {
+  color: var(--color-primary-dark);
+}
+
+.hero-socials a:hover,
+.about-link:hover,
+.projects-view-all:hover,
+.project-link:hover,
+.contact-email:hover {
+  color: var(--color-text);
+}
+
+/* Cards */
+.approach-card,
+.project-card,
+.featured-project,
+.achievement-card,
+.contact-card {
+  background: var(--color-white);
+  border: 1px solid var(--color-border);
+  border-radius: 16px;
+}
+
+.approach-card,
+.project-card,
+.achievement-card {
+  box-shadow: 0 8px 24px rgba(39, 51, 75, 0.05);
+}
+
+.approach-number,
+.approach-icon,
+.experience-heading-icon,
+.achievement-icon,
+.contact-icon {
+  color: var(--color-primary-dark);
+}
+
+.project-category,
+.timeline-type {
+  color: var(--color-primary-dark);
+  letter-spacing: 1px;
+  font-weight: 700;
+}
+
+.project-tags span,
+.experience-tags span {
+  background: var(--color-background);
+  color: var(--color-text);
+  border: 1px solid var(--color-border);
+  border-radius: 20px;
+}
+
+.project-image-label {
+  background: var(--color-text);
+  color: var(--color-white);
+}
+
+/* Timeline */
+.timeline-dot {
+  background: var(--color-primary);
+  border: 3px solid var(--color-background);
+}
+
+.experience-timeline {
+  border-color: var(--color-border);
+}
+
+/* Contact */
+.contact-main {
+  background: var(--color-white);
+  border: 1px solid var(--color-border);
+  border-radius: 20px;
+}
+
+.contact-item {
+  color: var(--color-text);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.contact-item:hover {
+  background: var(--color-background);
+  color: var(--color-text);
+}
+
+/* Accent details */
+.caption-dot {
+  background: var(--color-accent);
+}
+
+.bottom-line {
+  background: var(--color-primary);
+}
+
+.hero-image-decoration {
+  background: var(--color-primary);
+}
+
+/* Footer */
+.portfolio-footer {
+  border-top: 1px solid var(--color-border);
+}
+
+.footer-brand {
+  color: var(--color-text);
+  font-weight: 700;
+}
+
+.portfolio-footer p {
+  color: var(--color-muted);
+}
+
+.back-to-top {
+  background: var(--color-primary);
+  color: var(--color-white);
+  border-radius: 50%;
+}
+
+.back-to-top:hover {
+  background: var(--color-primary-dark);
+  color: var(--color-white);
+}
+
+.portfolio-copyright {
+  background: var(--color-text);
+  color: var(--color-white);
+}
+
+/* Responsive */
+@media (max-width: 991px) {
+  .portfolio-navbar .navbar-collapse {
+    background: var(--color-background);
+    padding: 12px 16px;
+    border-radius: 0 0 12px 12px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  .portfolio-page a {
+    transition: none;
+  }
+}
+/* CSS Document */
+
